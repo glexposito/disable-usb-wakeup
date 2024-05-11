@@ -1,0 +1,10 @@
+[Unit]
+Description=Disable USB wakeup functionality
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/bash /usr/local/bin/disable-usb-wakeup.sh
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
